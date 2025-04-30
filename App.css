@@ -1,0 +1,83 @@
+/* App.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 2rem;
+  color: #222;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.product-list {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.product-list h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.product-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #ecf0f1;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-list li:last-child {
+  border-bottom: none;
+}
+
+.product-list li:hover {
+  background-color: #f0f4f8;
+  transition: background-color 0.2s ease-in-out;
+}
